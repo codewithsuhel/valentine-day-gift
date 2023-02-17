@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Day Budget</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="bg-blue-400 py-9 px-9 mx-auto text-center">
+      <h1 class="text-3xl font-semibold mb-10">Hello Lovers</h1>
+      <div>
+        <input id="text-input" class="py-3 px-5 m-3" type="text" />
+        <button
+          id="add-btn"
+          class="py-3 px-5 bg-red-400 rounded-md font-bold text-white"
+        >
+          ADD
+        </button>
+      </div>
+      <div id="parent-container" class="text-center"></div>
+    </section>
+    <section class=" lg:px-12 flex flex-cols md:flex-row  ">
+        <div class="product-details mt-9 grid md:grid-cols-2 lg:grid-cols-2 gap-3 w-[70%]">
+            <div class="card w-96 bg-base-100 shadow-xl my-10">
+                <figure class="px-10 pt-10">
+                  <img class="w-full h-60" src="./images/kitkat.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">kitkat Chocolet</h2>
+                  <h2>price : $<span id="kitkat-price">200</span></h2>
+                  <input id="kitkat-quantity" class="border-2 rounded-md p-1" type="text" placeholder="Type here Quantity">
+                  <div class="card-actions">
+                    <button id="kitkat-buy-btn" class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl my-10">
+                <figure class="px-10 pt-10">
+                  <img class="w-full h-60" src="./images/image-removebg-preview.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Rose</h2>
+                  <h2>price : $<span id="rose-price">100</span></h2>
+                  <input id="rose-quantity" class="border-2 rounded-md p-1" type="text" placeholder="Type here Quantity">
+                  <div class="card-actions">
+                    <button id="rose-buy-btn" class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="card w-96 bg-base-100 shadow-xl my-10">
+                <figure class="px-10 pt-10">
+                  <img class="w-full h-60" src="/images/diary.jpg" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">Diary</h2>
+                  <h2>price : $<span id="diary-price">100</span></h2>
+                  <input id="diary-quantity" class="border-2 rounded-md p-1" type="text" placeholder="Type here Quantity">
+                  <div class="card-actions">
+                    <button id="diary-buy-btn" class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="mt-9 text-center w-[30%]">
+            <h1 class="text-3xl font-bold">Valentine Gift</h1>
+            <h2 class="text-2xl font-semibold m-4">Chocolet: $<span id="kitkat">00</span></h2>
+            <hr>
+            <h2 class="text-2xl font-semibold m-4">Rose: $<span id="rose">00</span></h2>
+            <hr>
+            <h2 class="text-2xl font-semibold m-4">Dairy: $<span id="diary">00</span></h2>
+            <hr>
+            <h2 class="text-2xl font-semibold m-4">Total: $<span id="total">00</span></h2>
+            <h2 class="text-2xl font-semibold m-4 border-3 bg-green-400">Use Promo Code 10% Discount</h2>
+            <input id="promo-code" class="text-2xl font-semibold m-4 border-2" type="text" placeholder="101">
+            <button id="apply-btn" class="text-2xl font-semibold m-4 px-5 py-3 bg-blue-400 rounded-md">Apply</button>
+            <h2 class="text-2xl font-semibold m-4">All Total: $<span id="all-total">00</span></h2>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>
